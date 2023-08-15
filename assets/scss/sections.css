@@ -1,1 +1,11 @@
-/*# sourceMappingURL=sections.css.map */
+.slider-section-wrapper {
+  width: 100%;
+  background-color: #fcf6f6;
+}
+.slider-section-wrapper .red-line {
+  border: solid 2px #d63384;
+  border-radius: 5px;
+  width: 28px;
+  font-weight: bold;
+  height: 0;
+}/*# sourceMappingURL=sections.css.map */
