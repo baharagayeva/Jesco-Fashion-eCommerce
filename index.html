@@ -194,31 +194,37 @@
             </div>
         </section>
         <!-- Section-2 End -->
-        <!-- Section-3 Start -->
-        <section class="section-3-wrapper">
+        <!-- Product Section Start -->
+        <section class="product-section-wrapper">
             <div class="container">
-                <div class="product-area">
+                <div class="product-area position-relative">
                     <div class="product-header row">
-                        <div class="section3-title col-xxl-8 col-xl-7 col-lg-5 col-md-12 col-sm-12 col-12">
+                        <div class="product-section-title col-xxl-7 col-xl-6 col-lg-7 col-md-5 col-sm-12 col-12">
                             <h2>#products</h2>
                         </div>
-                        <div class="col-xxl-4 col-xl-5 col-lg-7 col-md-12 col-sm-12 col-12 d-flex gap-5">
-                            <a class="nav-link" href="#">ALL</a>
-                            <a class="nav-link" href="#">New</a>
-                            <a class="nav-link" href="#">Bestsellers</a>
-                            <a class="nav-link" href="#">Items Sale</a>
+                        <div
+                            class="col-xxl-5 col-xl-6 col-lg-5 col-md-7 col-sm-12 col-12 d-flex gap-3  align-items-center gap-xl-5">
+                            <a class="nav-link active" href="#content1" onclick="changeContent('content1')">ALL</a>
+                            <a class="nav-link" href="#content2" onclick="changeContent('content2')">New</a>
+                            <a class="nav-link" href="#content3" onclick="changeContent('content3')">Bestsellers</a>
+                            <a class="nav-link" href="#content4" onclick="changeContent('content4')">Items Sale</a>
                         </div>
                         <div>
-                            <hr class="product-line w-100">
+                            <hr class="product-line w-100 m-0">
                         </div>
                     </div>
-                    <div class="product-boxs row">
+                    <div id="content1" class="product-boxs active row">
                         <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
                             <div class="box-image position-relative">
                                 <div class="firstImg w-100 h-100"><img class="w-100 h-100"
                                         src="assets/images/productImage/2 (1).jpg"></div>
                                 <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
                                         src="assets/images/productImage/2 (2).jpg"></div>
+                                <div class="badge black">NEW</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
                             </div>
                             <div class="box-info">
                                 <span class="fa fa-star checked"></span>
@@ -237,6 +243,12 @@
                                         src="assets/images/productImage/4.jpg"></div>
                                 <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
                                         src="assets/images/productImage/4 (1).jpg"></div>
+                                <div class="badge gradient">-10%</div>
+                                <div class="badge black down">NEW</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
                             </div>
                             <div class="box-info">
                                 <span class="fa fa-star checked"></span>
@@ -246,7 +258,7 @@
                                 <span class="fa fa-star"></span>
                                 <span class="review">(5 Review)</span>
                                 <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
-                                <p class="product-p">$38.50</p>
+                                <p class="product-cost">$38.50 <span class="product-precost">$48.50</span></p>
                             </div>
                         </div>
                         <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
@@ -255,6 +267,11 @@
                                         src="assets/images/productImage/5.jpg"></div>
                                 <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
                                         src="assets/images/productImage/3 (1).jpg"></div>
+                                <div class="badge gradient">-7%</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
                             </div>
                             <div class="box-info">
                                 <span class="fa fa-star checked"></span>
@@ -264,7 +281,7 @@
                                 <span class="fa fa-star"></span>
                                 <span class="review">(5 Review)</span>
                                 <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
-                                <p class="product-p">$38.50</p>
+                                <p class="product-p">$38.50 <span class="product-precost">$38.00</span></p>
                             </div>
                         </div>
                         <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
@@ -273,6 +290,11 @@
                                         src="assets/images/productImage/7 (1).jpg"></div>
                                 <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
                                         src="assets/images/productImage/1 (1).jpg"></div>
+                                <div class="badge black">SALE</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
                             </div>
                             <div class="box-info">
                                 <span class="fa fa-star checked"></span>
@@ -291,6 +313,12 @@
                                         src="assets/images/productImage/2 (2).jpg"></div>
                                 <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
                                         src="assets/images/productImage/10.jpg"></div>
+                                <div class="badge gradient">-5%</div>
+                                <div class="badge black down">NEW</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
                             </div>
                             <div class="box-info">
                                 <span class="fa fa-star checked"></span>
@@ -300,7 +328,7 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="review">(5 Review)</span>
                                 <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
-                                <p class="product-p">$38.50</p>
+                                <p class="product-p">$38.50 <span class="product-precost">$40.50</span></p>
                             </div>
                         </div>
                         <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
@@ -309,6 +337,9 @@
                                         src="assets/images/productImage/4 (1).jpg"></div>
                                 <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
                                         src="assets/images/productImage/12.jpg"></div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
                             </div>
                             <div class="box-info">
                                 <span class="fa fa-star checked"></span>
@@ -327,6 +358,10 @@
                                         src="assets/images/productImage/3 (1).jpg"></div>
                                 <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
                                         src="assets/images/productImage/14.jpg"></div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
                             </div>
                             <div class="box-info">
                                 <span class="fa fa-star checked"></span>
@@ -345,6 +380,567 @@
                                         src="assets/images/productImage/1 (1).jpg"></div>
                                 <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
                                         src="assets/images/productImage/16.jpg"></div>
+                                <div class="badge black">SALE</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ======================================= -->
+                    <div id="content2" class="product-boxs position-absolute row">
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/2 (1).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/2 (2).jpg"></div>
+                                <div class="badge black">NEW</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50</p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/4.jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/4 (1).jpg"></div>
+                                <div class="badge gradient">-10%</div>
+                                <div class="badge black down">NEW</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-cost">$38.50 <span class="product-precost">$48.50</span></p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/5.jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/3 (1).jpg"></div>
+                                <div class="badge gradient">-7%</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50 <span class="product-precost">$38.00</span></p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/7 (1).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/1 (1).jpg"></div>
+                                <div class="badge black">SALE</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50</p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/2 (2).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/10.jpg"></div>
+                                <div class="badge gradient">-5%</div>
+                                <div class="badge black down">NEW</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50 <span class="product-precost">$40.50</span></p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/4 (1).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/12.jpg"></div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50</p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/3 (1).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/14.jpg"></div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50</p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/1 (1).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/16.jpg"></div>
+                                <div class="badge black">SALE</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content3" class="product-boxs position-absolute row">
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/2 (1).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/2 (2).jpg"></div>
+                                <div class="badge black">NEW</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50</p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/4.jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/4 (1).jpg"></div>
+                                <div class="badge gradient">-10%</div>
+                                <div class="badge black down">NEW</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-cost">$38.50 <span class="product-precost">$48.50</span></p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/5.jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/3 (1).jpg"></div>
+                                <div class="badge gradient">-7%</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50 <span class="product-precost">$38.00</span></p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/7 (1).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/1 (1).jpg"></div>
+                                <div class="badge black">SALE</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50</p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/2 (2).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/10.jpg"></div>
+                                <div class="badge gradient">-5%</div>
+                                <div class="badge black down">NEW</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50 <span class="product-precost">$40.50</span></p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/4 (1).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/12.jpg"></div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50</p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/3 (1).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/14.jpg"></div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50</p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/1 (1).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/16.jpg"></div>
+                                <div class="badge black">SALE</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content4" class="product-boxs position-absolute row">
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/2 (1).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/2 (2).jpg"></div>
+                                <div class="badge black">NEW</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50</p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/4.jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/4 (1).jpg"></div>
+                                <div class="badge gradient">-10%</div>
+                                <div class="badge black down">NEW</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-cost">$38.50 <span class="product-precost">$48.50</span></p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/5.jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/3 (1).jpg"></div>
+                                <div class="badge gradient">-7%</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50 <span class="product-precost">$38.00</span></p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/7 (1).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/1 (1).jpg"></div>
+                                <div class="badge black">SALE</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50</p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/2 (2).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/10.jpg"></div>
+                                <div class="badge gradient">-5%</div>
+                                <div class="badge black down">NEW</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50 <span class="product-precost">$40.50</span></p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/4 (1).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/12.jpg"></div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50</p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/3 (1).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/14.jpg"></div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
+                            </div>
+                            <div class="box-info">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="review">(5 Review)</span>
+                                <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                <p class="product-p">$38.50</p>
+                            </div>
+                        </div>
+                        <div class="product-box col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="box-image position-relative">
+                                <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/1 (1).jpg"></div>
+                                <div class="secondImg position-absolute w-100 h-100"><img class="w-100 h-100"
+                                        src="assets/images/productImage/16.jpg"></div>
+                                <div class="badge black">SALE</div>
+                                <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                            class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button"><button>ADD TO CART</button></div>
                             </div>
                             <div class="box-info">
                                 <span class="fa fa-star checked"></span>
@@ -362,6 +958,8 @@
             </div>
         </section>
     </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

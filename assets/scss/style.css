@@ -457,7 +457,7 @@ p {
     font-size: 14px !important;
   }
 }
-.product-area .section3-title h2 {
+.product-area .product-section-title h2 {
   font-weight: bold;
   margin-bottom: 11px;
   background-image: linear-gradient(-96deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
@@ -467,23 +467,128 @@ p {
   color: transparent;
   font-size: 36px;
 }
+.product-area .nav-link {
+  font-size: 18px;
+  color: #A7A7A7;
+}
+.product-area #content2, .product-area #content3, .product-area #content4 {
+  top: 61px;
+}
 .product-area .product-boxs {
   padding-top: 60px;
+  visibility: hidden;
 }
 .product-area .product-boxs .product-box .box-image {
   height: 315.16px;
+  overflow: hidden;
 }
 .product-area .product-boxs .product-box .box-image:hover .secondImg {
   visibility: visible;
-  transform: rotate(2.4deg);
+  transform: rotate(3.5deg) scale(1.1);
 }
 .product-area .product-boxs .product-box .box-image:hover .firstImg {
   visibility: hidden;
 }
+.product-area .product-boxs .product-box .box-image:hover .hover-icon {
+  visibility: visible;
+}
+.product-area .product-boxs .product-box .box-image:hover .product-button {
+  visibility: visible;
+}
 .product-area .product-boxs .product-box .box-image .secondImg {
   top: 0;
   z-index: 1;
+  transition: transform 0.5s ease;
   visibility: hidden;
+}
+.product-area .product-boxs .product-box .box-image .badge {
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 1.6;
+  padding: 0 8px;
+  z-index: 3;
+  top: 5%;
+  left: 0;
+  border-radius: 10%;
+}
+.product-area .product-boxs .product-box .box-image .badge.black {
+  background-color: #000;
+}
+.product-area .product-boxs .product-box .box-image .badge.black.down {
+  top: 15%;
+}
+.product-area .product-boxs .product-box .box-image .badge.gradient {
+  background-image: linear-gradient(-96deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+}
+.product-area .product-boxs .product-box .box-image .heart-icon {
+  position: absolute;
+  z-index: 2;
+  top: 8%;
+  right: 10%;
+}
+.product-area .product-boxs .product-box .box-image .heart-icon a {
+  color: #000;
+  font-weight: 100;
+  font-size: 20px;
+}
+.product-area .product-boxs .product-box .box-image .heart-icon a:hover {
+  background-image: linear-gradient(-96deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.product-area .product-boxs .product-box .box-image .hover-icon {
+  position: absolute;
+  z-index: 2;
+  top: 22%;
+  right: 8%;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+}
+.product-area .product-boxs .product-box .box-image .hover-icon a {
+  color: #000;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.product-area .product-boxs .product-box .box-image .hover-icon a:nth-child(2) {
+  font-size: 24px !important;
+}
+.product-area .product-boxs .product-box .box-image .hover-icon a:hover {
+  background-image: linear-gradient(-96deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.product-area .product-boxs .product-box .box-image .product-button {
+  position: absolute;
+  z-index: 2;
+  bottom: 6%;
+  left: 20%;
+  visibility: hidden;
+}
+.product-area .product-boxs .product-box .box-image .product-button button {
+  color: #fff;
+  background-image: linear-gradient(-96deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+  padding: 15px 35px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 30px;
+  border: none;
+}
+.product-area .product-boxs .product-box .box-image .product-button button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .product-area .product-boxs .product-box .box-info {
   padding-top: 30px;
@@ -505,6 +610,18 @@ p {
   font-weight: 200;
   padding: 10px 0;
 }
-.product-area .product-boxs .product-box .box-info .product-p {
+.product-area .product-boxs .product-box .box-info .product-link:hover {
+  color: #fb5d5d;
+}
+.product-area .product-boxs .product-box .box-info .product-cost {
   color: #1D1D1D;
+}
+.product-area .product-boxs .product-box .box-info .product-precost {
+  color: #9F9E9E;
+  font-size: 15px;
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+.product-area .product-boxs.active {
+  visibility: visible;
 }/*# sourceMappingURL=style.css.map */

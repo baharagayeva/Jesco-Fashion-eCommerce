@@ -364,10 +364,9 @@
     }
 }
 
-// Section3
-// Product Area Styles
+// Product Section Styles
 .product-area {
-    .section3-title {
+    .product-section-title {
         h2 {
             font-weight: bold;
             margin-bottom: 11px;
@@ -380,28 +379,154 @@
         }
     }
 
+    .nav-link{
+        font-size: 18px;
+        color: $nav-link;
+    }
+
+    #content2,#content3,#content4{
+        top: 60px;
+    }
+
     .product-boxs {
         padding-top: 60px;
+        visibility: hidden;
 
         .product-box {
             .box-image {
                 height: 315.16px;
+                overflow: hidden;
+
                 &:hover {
                     .secondImg {
                         visibility: visible;
-                        transform: rotate(2.4deg);
+                        transform: rotate(3.5deg) scale(1.1);
                     }
 
-                    .firstImg{
+                    .firstImg {
                         visibility: hidden;
+                    }
+
+                    .hover-icon {
+                        visibility: visible;
+                    }
+
+                    .product-button{
+                        visibility: visible;
                     }
                 }
 
                 .secondImg {
                     top: 0;
                     z-index: 1;
+                    transition: transform 0.5s ease;
                     visibility: hidden;
                 }
+
+                .badge {
+                    position: absolute;
+                    color: $white;
+                    font-size: 12px;
+                    font-weight: 200;
+                    line-height: 1.6;
+                    padding: 0 8px;
+                    z-index: 3;
+                    top: 5%;
+                    left: 0;
+                    border-radius: 10%;
+                }
+
+                .badge.black {
+                    background-color: $black;
+                }
+
+                .badge.black.down {
+                    top: 15%;
+                }
+
+                .badge.gradient {
+                    background-image: linear-gradient(-96deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+                    ;
+                }
+
+                .heart-icon {
+                    position: absolute;
+                    z-index: 2;
+                    top: 8%;
+                    right: 10%;
+
+                    a {
+                        color: $black;
+                        font-weight: 100;
+                        font-size: 20px;
+
+                        &:hover {
+                            background-image: linear-gradient(-96deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+                            color: $white;
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+
+                .hover-icon {
+                    position: absolute;
+                    z-index: 2;
+                    top: 22%;
+                    right: 8%;
+                    display: flex;
+                    flex-direction: column;
+                    visibility: hidden;
+
+                    a {
+                        color: $black;
+                        font-weight: lighter;
+                        font-size: 20px;
+                        margin-bottom: 15px;
+
+                        &:nth-child(2) {
+                            font-size: 24px !important;
+                        }
+
+                        &:hover {
+                            background-image: linear-gradient(-96deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+                            color: $white;
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+
+                .product-button {
+                    position: absolute;
+                    z-index: 2;
+                    bottom: 6%;
+                    left: 20%;
+                    visibility: hidden;
+
+                    button {
+                        color: $white;
+                        background-image: linear-gradient(-96deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+                        padding: 15px 35px;
+                        font-size: 14px;
+                        text-align: center;
+                        border-radius: 30px;
+                        border: none;
+
+                        &:hover{
+                            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        }
+                    }
+                }
+
             }
 
             .box-info {
@@ -426,12 +551,27 @@
                     color: $product-link;
                     font-weight: 200;
                     padding: 10px 0;
+
+                    &:hover {
+                        color: $jesco-red;
+                    }
                 }
 
-                .product-p {
+                .product-cost {
                     color: $product-link;
+                }
+
+                .product-precost {
+                    color: $review-color;
+                    font-size: 15px;
+                    margin-left: 10px;
+                    text-decoration: line-through;
                 }
             }
         }
+    }
+
+    .product-boxs.active{
+        visibility: visible;
     }
 }
