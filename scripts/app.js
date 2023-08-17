@@ -1,19 +1,37 @@
-const nextBtn = document.getElementById("nextBtn");
-const prevBtn = document.getElementById("prevBtn");
+var slideIndex = 1;
+showSlides(slideIndex);
 
-nextBtn.onclick = function () {
-  currentSlide();
-};
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
 
 prevBtn.addEventListener("click", (e) => {
-  currentSlide(0);
+  e.preventDefault();
+  plusItems(-1);
 });
 
-function currentSlide(n) {
-  showSlides(n);
+nextBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  plusItems(1);
+});
+
+function plusItems(n) {
+  let index = (slideIndex += n);
+  showSlides(index);
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slider-item");
+  const slides = document.getElementsByClassName("slider-item");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex - 1].style.display = "flex";
 }
