@@ -471,8 +471,10 @@ p {
   font-size: 18px;
   color: #A7A7A7;
 }
-.product-area #content2, .product-area #content3, .product-area #content4 {
-  top: 61px;
+.product-area #content2,
+.product-area #content3,
+.product-area #content4 {
+  top: 60px;
 }
 .product-area .product-boxs {
   padding-top: 60px;
@@ -624,4 +626,137 @@ p {
 }
 .product-area .product-boxs.active {
   visibility: visible;
+}
+
+.deal-section {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+.deal-section .deal-area {
+  padding-top: 80px;
+  background-image: url(../images/deal-area/deal-bg.jpg);
+}
+.deal-section .deal-area .deal-content {
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.deal-section .deal-area .deal-content p {
+  color: #fb5d5d;
+  margin-bottom: 12px;
+}
+.deal-section .deal-area .deal-content h3 {
+  font-size: 36px;
+  color: #464444;
+  font-weight: bold;
+}
+.deal-section .deal-area .deal-content .counter {
+  font-size: 36px;
+  color: #303030;
+  font-weight: bold;
+}
+.deal-section .deal-area .deal-content .counter-content p {
+  font-size: 14px;
+  color: #303030;
+  margin-top: 12px;
+  margin-right: 30px;
+  margin-left: 5px;
+  text-align: center;
+}
+.deal-section .deal-area .deal-content button {
+  background-image: linear-gradient(-96deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 20px 45px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+.deal-section .deal-area .deal-content button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.testimonials-area {
+  padding-bottom: 40px;
+}
+.testimonials-area h2 {
+  font-weight: bold;
+  margin-bottom: 11px;
+  background-image: linear-gradient(-96deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+}
+.testimonials-area .testimonials-boxs {
+  padding: 60px 0;
+  background-color: rgb(255, 249, 249);
+}
+.testimonials-area .testimonials-boxs .testimonials-box {
+  padding: 60px 40px;
+  background-color: #fff;
+}
+.testimonials-area .testimonials-boxs .testimonials-box .checked {
+  color: #ffde00;
+  padding-right: 5px;
+}
+.testimonials-area .testimonials-boxs .testimonials-box .testimonial-text {
+  color: #818790;
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 34px;
+}
+.testimonials-area .testimonials-boxs .testimonials-box .testimonial-person {
+  margin-top: 40px;
+  text-align: center;
+}
+.testimonials-area .testimonials-boxs .testimonials-box .testimonial-person .person-name {
+  margin-left: 25px;
+}
+.testimonials-area .testimonials-boxs .testimonials-box .testimonial-person h4 {
+  font-size: 18px;
+  margin-bottom: 3px;
+  color: #39393A;
+}
+.testimonials-area .testimonials-boxs .testimonials-box .testimonial-person p {
+  font-size: 14px;
+  color: #576477;
+}
+
+footer .footer-1 {
+  background-color: #333333;
+}
+footer .footer-2 {
+  background-color: #474646;
+}
+footer .af {
+  color: #afafaf;
+}
+footer .fs-12 {
+  font-size: 15px;
+}
+
+.shop-section-wrapper {
+  background-color: #fcf6f6;
+  color: #3C3C3C;
+  padding: 110px 0 117px;
+}
+.shop-section-wrapper h2 {
+  font-size: 48px;
+  margin: 0;
+}
+.shop-section-wrapper p {
+  font-size: 18px;
+  margin-top: 14px;
+}
+.shop-section-wrapper p a {
+  color: #3C3C3C;
+}
+.shop-section-wrapper p a:hover {
+  color: #fb5d5d;
 }/*# sourceMappingURL=style.css.map */

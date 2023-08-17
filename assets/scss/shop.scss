@@ -1,0 +1,23 @@
+.shop-section-wrapper{
+    background-color: $shop-bg-color;
+    color: $shop-title;
+    padding: 110px 0 117px;
+     
+    h2{
+        font-size: 48px;
+        margin: 0;
+    }
+
+    p{
+        font-size: 18px;
+        margin-top: 14px;
+
+        a{
+            color:$shop-title ;
+
+            &:hover{
+                color: $jesco-red;
+            }
+        }
+    }
+}

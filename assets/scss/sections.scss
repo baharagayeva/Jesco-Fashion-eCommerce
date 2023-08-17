@@ -379,18 +379,21 @@
         }
     }
 
-    .nav-link{
+    .nav-link {
         font-size: 18px;
         color: $nav-link;
     }
 
-    #content2,#content3,#content4{
+    #content2,
+    #content3,
+    #content4 {
         top: 60px;
     }
 
     .product-boxs {
         padding-top: 60px;
         visibility: hidden;
+        
 
         .product-box {
             .box-image {
@@ -411,7 +414,7 @@
                         visibility: visible;
                     }
 
-                    .product-button{
+                    .product-button {
                         visibility: visible;
                     }
                 }
@@ -521,7 +524,7 @@
                         border-radius: 30px;
                         border: none;
 
-                        &:hover{
+                        &:hover {
                             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                         }
                     }
@@ -571,7 +574,147 @@
         }
     }
 
-    .product-boxs.active{
+    .product-boxs.active {
         visibility: visible;
+    }
+}
+
+// Deal Area Styles
+.deal-section {
+    padding-top: 70px;
+    padding-bottom: 100px;
+
+    .deal-area {
+        padding-top: 80px;
+        background-image: url(../images/deal-area/deal-bg.jpg);
+
+        .deal-content {
+            padding-bottom: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                color: $jesco-red;
+                margin-bottom: 12px;
+            }
+
+            h3 {
+                font-size: 36px;
+                color: $deal-title;
+                font-weight: bold;
+            }
+
+            .counter {
+                font-size: 36px;
+                color: $counter-color;
+                font-weight: bold;
+            }
+
+            .counter-content {
+                p {
+                    font-size: 14px;
+                    color: $counter-color;
+                    margin-top: 12px;
+                    margin-right: 30px;
+                    margin-left: 5px;
+                    text-align: center;
+                }
+            }
+
+            button {
+                background-image: linear-gradient(-96deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+                color: $white;
+                font-weight: bold;
+                border: none;
+                padding: 20px 45px;
+                border-radius: 30px;
+                margin-top: 20px;
+
+                &:hover {
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
+            }
+        }
+    }
+}
+
+// Testimonials Area Styles
+.testimonials-area {
+    padding-bottom: 40px;
+
+    h2 {
+        font-weight: bold;
+        margin-bottom: 11px;
+        background-image: linear-gradient(-96deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .testimonials-boxs {
+        padding: 60px 0;
+        background-color: rgb(255, 249, 249);
+
+        .testimonials-box {
+            padding: 60px 40px;
+            background-color: $white;
+
+            .checked {
+                color: $rating-checked;
+                padding-right: 5px;
+            }
+
+            .testimonial-text {
+                color: $testimonial-text;
+                font-size: 18px;
+                margin-top: 20px;
+                line-height: 34px;
+            }
+
+            .testimonial-person {
+                margin-top: 40px;
+                text-align: center;
+
+                .person-name {
+                    margin-left: 25px;
+                }
+
+                h4 {
+                    font-size: 18px;
+                    margin-bottom: 3px;
+                    color: $testi-personName;
+                }
+
+                p {
+                    font-size: 14px;
+                    color: $testi-customer;
+                }
+            }
+        }
+    }
+}
+
+// Footer Area Styles
+footer {
+    .footer-1 {
+        background-color: $footer1-bg-color;
+    }
+
+    .footer-2 {
+        background-color: $footer2-bg-color;
+    }
+
+    .af {
+        color: $color-af;
+    }
+
+    .fs-12 {
+        font-size: 15px;
     }
 }
