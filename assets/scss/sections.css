@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .slider-section-wrapper {
   width: 100%;
   background-color: #fcf6f6;
@@ -8,4 +9,21 @@
   width: 28px;
   font-weight: bold;
   height: 0;
+=======
+.banner-area {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.banner-area .row .col-auto img {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+.banner-area .row .col-auto .item-disc {
+  top: 50%;
+  left: 15%;
+}
+.banner-area .row .col-auto .item-disc-center {
+  top: 40%;
+  left: 30%;
+>>>>>>> 22ae3afa3df45f532bb3262a7ebb4c2b3f9a4447
 }/*# sourceMappingURL=sections.css.map */

@@ -21,9 +21,6 @@
   margin-right: auto;
   max-width: 1200px;
 }
-.container .row {
-  gap: 150px;
-}
 .container .row .logo1 {
   padding-top: 35px;
   padding-bottom: 35px;
@@ -55,9 +52,6 @@
 
 /* Responsive Header */
 @media (max-width: 1160px) {
-  .container .row {
-    gap: 0;
-  }
   .logo1 {
     padding-top: 15px;
     padding-bottom: 15px;
