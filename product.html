@@ -271,30 +271,48 @@
       <section class="product-second-section mx-5">
         <div class="second-sec-images d-flex">
           <div class="mouseover-images w-50 row d-flex justify-content-end">
-            <div class="main-img-sec col-9">
-              <img
+            <!-- <div class="main-img-sec col-9 p-0 mx-3"
+            style="
+            background-image: url(./assets/images/productImages/1.jpg);
+          "
+            >
+                <img
+                id="main-img"
+                onmousemove="zoom(event)"
                 class="w-100 h-100"
                 src="./assets/images/productImages/1.jpg"
                 alt=""
               />
-            </div>
+            </div> -->
+            <figure
+            id="main-img"
+                class="zoom col-9 p-0 mx-3"
+                onmousemove="zoom(event)"
+                style="
+                background-image: url(./assets/images/productImages/1.jpg);">
+                <img id="main-img-default" src="./assets/images/productImages/1.jpg" />
+            </figure>
             <div class="small-img-sec d-flex gap-2 col-2 flex-column p-0">
               <img
-                style="width:90px; height: 110px;"
+              id="small-img"
+                style="width:90px; height: 118px;"
                 src="./assets/images/productImages/1.jpg"
                 alt=""
               />
               <img
+              id="small-img"
               style="width:90px; height: 110px;"
                 src="./assets/images/productImages/2.jpg"
                 alt=""
               />
               <img
+              id="small-img"
               style="width:90px; height: 110px;"
                 src="./assets/images/productImages/3.jpg"
                 alt=""
               />
               <img
+              id="small-img"
               style="width:90px; height: 110px;"
                 src="./assets/images/productImages/4.jpg"
                 alt=""
@@ -305,7 +323,7 @@
             class="mouseover-images w-50 px-4 d-flex justify-content-start"
           >
             <div class="main-img-sec">
-              <h3>Ardene Microfiber Tights</h2>
+                <h3>Ardene Microfiber Tights</h2>
                 <p class="text-danger">$18.90</p>
                 <span>
                   <i class="fa-solid fa-star"></i>
@@ -316,42 +334,41 @@
                 </span>
                 <span class="opacity-25"> ( 5 Customer Review ) </span>
                 <p class="opacity-25 py-4">Lorem ipsum dolor sit amet, consect adipisicing elit, sed do eiusmod tempor incidi ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita ullamco laboris nisi ut aliquip ex ea commodo</p>
-           <div class="d-flex gap-2">
-            <div class="d-flex add-remove justify-content-around gap-2">
-              <span>-</span>
-              <span>1</span>
-              <span>+</span>
-             </div>
-             <div class="d-flex gap-3 add-to-cart">
-              <span>ADD TO CART</span>
-             </div>
-             <div class="d-flex icons justify-content-center align-items-center gap-2">
-              <i class="fa-regular fa-heart"></i>
-             </div>
-             <div class="d-flex icons justify-content-center align-items-center gap-2">
-              <i class="fa-solid fa-rotate"></i>
-             </div>
-           </div>
-           <div>
-           <p class="pt-4">
-             <span class="opacity-75">SKU:</span>
-             <span class="opacity-25">Ch-256xl</span>
-           </p>
-           <p>
-            <span class="opacity-75">Categories:</span>
-            <span class="opacity-25">Fashion.eCommerce</span>
-          </p>
-          <div class=" d-flex gap-4">
-            <div class="opacity-75">Share:</div>
-            <div class="d-flex gap-3">
-            <a href="#"><i class="social-media text-dark fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="social-media text-dark fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="social-media text-dark fa-brands fa-google"></i></a>
-            <a href="#"><i class="social-media text-dark fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="social-media text-dark fa-brands fa-instagram"></i></a>
+                <div class="d-flex gap-2">
+                  <div class="d-flex add-remove justify-content-around gap-2">
+                    <span>-</span>
+                    <span>1</span>
+                    <span>+</span>
+                  </div>
+                  <div class="d-flex gap-3 add-to-cart">
+                    <span>ADD TO CART</span>
+                  </div>
+                  <div class="d-flex icons justify-content-center align-items-center gap-2">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="d-flex icons justify-content-center align-items-center gap-2">
+                    <i class="fa-solid fa-rotate"></i>
+                  </div>
+                </div>
+                <p class="pt-4">
+                  <span class="opacity-75">SKU:</span>
+                  <span class="opacity-25">Ch-256xl</span>
+                </p>
+                <p>
+                  <span class="opacity-75">Categories:</span>
+                  <span class="opacity-25">Fashion.eCommerce</span>
+                </p>
+                <div class=" d-flex gap-4">
+                  <div class="opacity-75">Share:</div>
+                  <div class="d-flex gap-3">
+                  <a href="#"><i class="social-media text-dark fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="social-media text-dark fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="social-media text-dark fa-brands fa-google"></i></a>
+                  <a href="#"><i class="social-media text-dark fa-brands fa-youtube"></i></a>
+                  <a href="#"><i class="social-media text-dark fa-brands fa-instagram"></i></a>
+                  </div>
+                </div>
             </div>
-          </div>
-         </div>
           </div>
         </div>
         <!-- <div class="second-sec-info"></div> -->
@@ -593,5 +610,7 @@
       </footer >
       <!-- Footer end -->
     </div>
+
+    <script src="./scripts/product1.js"></script>
   </body>
 </html>
