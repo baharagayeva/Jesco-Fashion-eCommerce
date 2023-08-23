@@ -1,0 +1,70 @@
+// Footer Area Styles
+footer {
+    .footer-1 {
+        background-color: $footer1-bg-color;
+        padding: 80px 0 55px 0;
+        line-height: 30px;
+
+        .af {
+            color: $color-af;
+        }
+
+        ul {
+            li {
+                line-height: 38px;
+
+                .move-right {
+                    position: relative;
+                    transition: left 3s ease;
+
+                    &:hover {
+                        left: 10px;
+                        color: $jesco-red;
+                    }
+                }
+            }
+        }
+
+        .footer-header {
+            font-size: 20px;
+            margin-bottom: 27px;
+        }
+
+        .footer-icon {
+            &:hover {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background-color: $jesco-red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    .hover-col {
+        &:hover {
+            color: $jesco-red;
+        }
+    }
+
+    .footer-2 {
+        background-color: $footer2-bg-color;
+
+        p {
+            i {
+                font-size: 16px;
+                color: $jesco-red;
+            }
+        }
+    }
+
+    .f2 {
+        color: $color-f2;
+    }
+
+    .fs-12 {
+        font-size: 14px;
+    }
+}

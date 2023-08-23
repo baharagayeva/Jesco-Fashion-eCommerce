@@ -9,7 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
@@ -134,21 +136,362 @@
             </div>
         </section>
         <!-- Shop Section End -->
+        <!-- MainShop Section Start -->
         <section class="mainShop-section-wrapper">
             <div class="container">
-                <div class="mainShop-area">
+                <div class="mainShop-area row">
                     <div class="shop-product-info col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-                        <button>Search<a href="#"><i class="bi bi-search"></i></a></button>
+                        <button><span id="search">Search</span><a href="#"><i class="bi bi-search"></i></a></button>
                         <div class="price-filter-area">
                             <h2>Price Filter</h2>
                             <p>$0 - $0</p>
+                            <div class="slider" id="slider">
+                                <div class="range"></div>
+                                <div class="thumb" id="thumb1"></div>
+                                <div class="thumb" id="thumb2"></div>
+                            </div>
+                        </div>
+                        <div class="category-area">
+                            <h2>Category</h2>
+                            <ul>
+                                <li><a href="#">Accesasories (6)</a></li>
+                                <li><a href="#">Computer (4)</a></li>
+                                <li><a href="#">Covid-19 (2)</a></li>
+                                <li><a href="#">Electronics (6)</a></li>
+                                <li><a href="#">Frame Sunglasses (12)</a></li>
+                                <li><a href="#">Furniture (7)</a></li>
+                                <li><a href="#">Genuine Leather (9)</a></li>
+                            </ul>
+                        </div>
+                        <div class="color-area">
+                            <h2>Color</h2>
+                            <ul class="d-flex justify-content-around">
+                                <li><a href="#" class="yellow active"></a></li>
+                                <li><a href="#" class="black"></a></li>
+                                <li><a href="#" class="red"></a></li>
+                                <li><a href="#" class="pink"></a></li>
+                            </ul>
+                        </div>
+                        <div class="size-area">
+                            <h2>Size</h2>
+                            <div class="size-list">
+                                <ul class="d-flex justify-content-around">
+                                    <li><a href="#" class="small1 gray active">S</a></li>
+                                    <li><a href="#" class="medium gray">M</a></li>
+                                    <li><a href="#" class="large gray">L</a></li>
+                                    <li><a href="#" class="extra-large gray">XL</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tag-area">
+                            <h2>Tags</h2>
+                            <ul class="d-flex flex-wrap">
+                                <li><a href="#" class="small1 gray active">Fashion</a></li>
+                                <li><a href="#" class="medium gray">Organic</a></li>
+                                <li><a href="#" class="large gray">Old Fashion</a></li>
+                                <li><a href="#" class="extra-large gray">Men</a></li>
+                                <li><a href="#" class="small1 gray active">Fashion</a></li>
+                                <li><a href="#" class="small1 gray active">Dress</a></li>
+                            </ul>
+                        </div>
+                        <div class="center position-relative"><a href="#"><img class="banner-img"
+                                    src="../images/banner/2.jpg"></a>
+                            <div class="item-disc-center position-absolute">
+                                <p class="title">#bestsellers</p>
+                                <a href="#" class="shop-link">Shop Now</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="shop-product col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12"></div>
+                    <div class="shop-product col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                        <div class="product-top-bar">
+                            <div class="top-bar-item">
+                                <p><span class="num">12</span> Product Found of <span class="num">30</span></p>
+                            </div>
+                            <div class="top-bar-item">
+                                <i class="bi bi-grid-3x3-gap-fill pe-4 fs-4"></i>
+                                <i class="bi bi-list-task fs-4"></i>
+                            </div>
+                            <div class="top-bar-item">
+                                <p>Sort By:<a href="#">Name, A to Z<i class="bi bi-chevron-down"></i></a></p>
+                            </div>
+                        </div>
+                        <div id="content1" class="product-boxs active row">
+                            <div class="product-box col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="box-image position-relative">
+                                    <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                            src="../images/productImage/2 (1).jpg"></div>
+                                    <div class="badge black">NEW</div>
+                                    <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                    <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                                class="bi bi-arrow-repeat"></i></a></div>
+                                    <div class="product-button"><button>ADD TO CART</button></div>
+                                </div>
+                                <div class="box-info">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="review">(5 Review)</span>
+                                    <div><a class="product-link" href="#">Women's Elizabeth Coat</a></div>
+                                    <p class="product-p">$38.50</p>
+                                </div>
+                            </div>
+                            <div class="product-box col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="box-image position-relative">
+                                    <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                            src="../images/productImage/2 (2).jpg"></div>
+                                    <div class="badge gradient">-10%</div>
+                                    <div class="badge black down">NEW</div>
+                                    <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                    <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                                class="bi bi-arrow-repeat"></i></a></div>
+                                    <div class="product-button"><button>ADD TO CART</button></div>
+                                </div>
+                                <div class="box-info">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="review">(4 Review)</span>
+                                    <div><a class="product-link" href="#">Ardene Microfiber Tights</a></div>
+                                    <p class="product-cost">$38.50 <span class="product-precost">$48.50</span></p>
+                                </div>
+                            </div>
+                            <div class="product-box col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="box-image position-relative">
+                                    <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                            src="../images/productImage/4.jpg"></div>
+                                    <div class="badge gradient">-7%</div>
+                                    <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                    <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                                class="bi bi-arrow-repeat"></i></a></div>
+                                    <div class="product-button"><button>ADD TO CART</button></div>
+                                </div>
+                                <div class="box-info">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="review">(0 Review)</span>
+                                    <div><a class="product-link" href="#">Women's Long Sleeve Shirts</a></div>
+                                    <p class="product-p">$30.50 <span class="product-precost">$38.00</span></p>
+                                </div>
+                            </div>
+                            <div class="product-box col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="box-image position-relative">
+                                    <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                            src="../images/productImage/4 (1).jpg"></div>
+                                    <div class="badge black">SALE</div>
+                                    <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                    <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                                class="bi bi-arrow-repeat"></i></a></div>
+                                    <div class="product-button"><button>ADD TO CART</button></div>
+                                </div>
+                                <div class="box-info">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="review">(3 Review)</span>
+                                    <div><a class="product-link" href="#">Parrera Sunglasses - Lomashop</a></div>
+                                    <p class="product-p">$38.50</p>
+                                </div>
+                            </div>
+                            <div class="product-box col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="box-image position-relative">
+                                    <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                            src="../images/productImage/5.jpg"></div>
+                                    <div class="badge gradient">-5%</div>
+                                    <div class="badge black down">NEW</div>
+                                    <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                    <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                                class="bi bi-arrow-repeat"></i></a></div>
+                                    <div class="product-button">
+                                        <button>ADD TO CART</button>
+                                    </div>
+                                </div>
+                                <div class="box-info">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="review">(5 Review)</span>
+                                    <div><a class="product-link" href="#">Cool Man Wearing Leather</a></div>
+                                    <p class="product-p">$38.50 <span class="product-precost">$40.50</span></p>
+                                </div>
+                            </div>
+                            <div class="product-box col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="box-image position-relative">
+                                    <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                            src="../images/productImage/3 (1).jpg"></div>
+                                    <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                    <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                                class="bi bi-arrow-repeat"></i></a></div>
+                                    <div class="product-button">
+                                        <button>ADD TO CART</button>
+                                    </div>
+                                </div>
+                                <div class="box-info">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="review">(5 Review)</span>
+                                    <div><a class="product-link" href="#">Portrait Of A Young Stylish</a></div>
+                                    <p class="product-p">$38.50</p>
+                                </div>
+                            </div>
+                            <div class="product-box col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="box-image position-relative">
+                                    <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                            src="../images/productImage/7 (1).jpg"></div>
+                                    <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                    <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                                class="bi bi-arrow-repeat"></i></a></div>
+                                    <div class="product-button"><button>ADD TO CART</button></div>
+                                </div>
+                                <div class="box-info">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="review">(4 Review)</span>
+                                    <div><a class="product-link" href="#">Men's Fashion Leather Bag</a></div>
+                                    <p class="product-p">$30.50</p>
+                                </div>
+                            </div>
+                            <div class="product-box col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="box-image position-relative">
+                                    <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                            src="../images/productImage/1 (1).jpg"></div>
+                                    <div class="badge black">SALE</div>
+                                    <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                    <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                                class="bi bi-arrow-repeat"></i></a></div>
+                                    <div class="product-button"><button>ADD TO CART</button></div>
+                                </div>
+                                <div class="box-info">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="review">(3 Review)</span>
+                                    <div><a class="product-link" href="#">Long sleeve knee length</a></div>
+                                    <p class="product-p">$38.50</p>
+                                </div>
+                            </div>
+                            <div class="product-box col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="box-image position-relative">
+                                    <div class="firstImg w-100 h-100"><img class="w-100 h-100"
+                                            src="../images/productImage/9 (1).jpg"></div>
+                                    <div class="badge black">SALE</div>
+                                    <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
+                                    <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
+                                                class="bi bi-arrow-repeat"></i></a></div>
+                                    <div class="product-button"><button>ADD TO CART</button></div>
+                                </div>
+                                <div class="box-info">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="review">(3 Review)</span>
+                                    <div><a class="product-link" href="#">Long sleeve knee length</a></div>
+                                    <p class="product-p">$38.50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-button d-flex justify-content-center align-items-center">
+                            <button>LOAD MORE <i class="bi bi-arrow-repeat ps-2"></i></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- MainShop Section End -->
+        <!-- Footer start -->
+        <footer>
+            <div class="footer-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-12 col-12 mb-md-5 mb-sm-4 mb-4">
+                            <img src="../images/logo/logo-white.png" />
+                            <p class="af py-4 text-start">Lorem ipsum dolor sit amet consectet adipisicing
+                                elit, sed do eiusmod templ incididunt ut labore et dolore magnaol aliqua Ut enim ad
+                                minim.</p>
+                            <div class="d-flex gap-2 ps-2">
+                                <a href="#"><i class="footer-icon text-light fa-brands fa-twitter fs-12 p-2"></i></a>
+                                <a href="#"><i class="footer-icon fa-brands text-light fa-tumblr fs-12 p-2"></i></a>
+                                <a href="#"><i class="footer-icon text-light fa-brands fa-facebook-f fs-12 p-2"></i></a>
+                                <a href="#"><i class="footer-icon text-light fa-brands fa-instagram fs-12 p-2"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-12 mb-sm-4 mb-4">
+                            <ul>
+                                <li>
+                                    <h6 class="text-light footer-header">Quick Links</h4>
+                                </li>
+                                <li class="af px-3 m-0">-<a href="#" class="move-right af "> Support</a></li>
+                                <li class="af px-3 m-0">-<a href="#" class="move-right af "> Helpline</a></li>
+                                <li class="af px-3 m-0">-<a href="#" class="move-right af "> Courses</a></li>
+                                <li class="af px-3 m-0">-<a href="#" class="move-right af "> About</a></li>
+                                <li class="af px-3 m-0">-<a href="#" class="move-right af "> Event</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-12 mb-sm-4 mb-4">
+                            <ul>
+                                <li>
+                                    <h6 class="text-light footer-header">Other Page</h4>
+                                </li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> About</a></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Blog</a></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Speakers</a></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Contact</a></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Tricket</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-12 mb-4">
+                            <ul>
+                                <li>
+                                    <h6 class="text-light footer-header">Company</h4>
+                                </li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Jesco</a></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Shop</a></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Contact Us</a></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Log In</a></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Help</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                            <h6 class="text-light footer-header">Store Information</h4>
+                                <p class="af py-1 m-0 w-76">2005 Your Address Goes Here.
+                                    896, Address 10010, HGJ</p>
+                                <p class="af py-1 m-0 ">Phone/Fax:<a href="#" class="af hover-col">0123456789</a></p>
+                                <p class="af py-1 m-0 ">email:<a href="#" class="af hover-col">demo@example.com</a></p>
+                                <div class="py-3">
+                                    <img class="" src="../images/icons/payment.png" alt="">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-2 f2 fs-12 p-4 d-flex justify-content-center align-items-center">
+                <p class="m-0">© 2023 Jesco Made With <i class="fa-solid fa-heart"></i> By <a href="#"
+                        class="f2 hover-col">HasThemes</a>.</p>
+            </div>
+        </footer>
+        <!-- Footer end -->
     </div>
+    <script src="../js/doubleRangeSlider.js"></script>
 </body>
 
 </html>

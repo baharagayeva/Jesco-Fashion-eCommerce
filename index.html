@@ -8,7 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
@@ -138,7 +140,7 @@
                             </div>
                         </div>
                         <div class="col-3 col-xl-3 col-lg-3 col-md-9 col-sm-9 center position-relative"><a href="#"><img
-                                    src="assets/images/banner/2.jpg"></a>
+                                    class="banner-img" src="assets/images/banner/2.jpg"></a>
                             <div class="item-disc-center position-absolute">
                                 <p class="title">#bestsellers</p>
                                 <a href="#" class="shop-link">Shop Now</a>
@@ -311,7 +313,9 @@
                                 <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
                                 <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
                                             class="bi bi-arrow-repeat"></i></a></div>
-                                <div class="product-button"><button>ADD TO CART</button></div>
+                                <div class="product-button">
+                                    <button>ADD TO CART</button>
+                                </div>
                             </div>
                             <div class="box-info">
                                 <span class="fa fa-star checked"></span>
@@ -333,6 +337,9 @@
                                 <div class="heart-icon"><a href="#"><i class="bi bi-heart"></i></a></div>
                                 <div class="hover-icon"><a href="#"><i class="bi bi-search"></i></a><a href="#"><i
                                             class="bi bi-arrow-repeat"></i></a></div>
+                                <div class="product-button">
+                                    <button>ADD TO CART</button>
+                                </div>
                             </div>
                             <div class="box-info">
                                 <span class="fa fa-star checked"></span>
@@ -988,8 +995,8 @@
             <div class="container">
                 <div class="testimonials-area">
                     <h2>#testimonials</h2>
-                    <div class="testimonials-boxs row">
-                        <div class="testimonials-box col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="testimonials-boxs row gap-xl-5">
+                        <div class="testimonials-box col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -1006,7 +1013,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="testimonials-box col-xl-4 col-lg-6 col-md-6 d-md-block d-none">
+                        <div class="testimonials-box col-xl-3 col-lg-6 col-md-6 d-md-block d-none">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -1023,7 +1030,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="testimonials-box col-xl-4 d-xl-block d-none">
+                        <div class="testimonials-box col-xl-3 d-xl-block d-none">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -1049,58 +1056,64 @@
         <footer>
             <div class="footer-1">
                 <div class="container">
-                    <div class="w-76 m-auto row py-5">
-                        <div class="logo1 col align-self-center col-3">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-12 col-12 mb-md-5 mb-sm-4 mb-4">
                             <img src="assets/images/logo/logo-white.png" />
-                            <p class="af fs-12 py-3 text-start w-76">Lorem ipsum dolor sit amet consectet adipisicing
+                            <p class="af py-4 text-start">Lorem ipsum dolor sit amet consectet adipisicing
                                 elit, sed do eiusmod templ incididunt ut labore et dolore magnaol aliqua Ut enim ad
                                 minim.</p>
-                            <div class="d-flex gap-4">
-                                <i class="text-light fa-brands fa-twitter fs-12"></i>
-                                <i class="fa-brands text-light fa-tumblr fs-12"></i>
-                                <i class="text-light fa-brands fa-facebook-f fs-12"></i>
-                                <i class="text-light fa-brands fa-instagram fs-12"></i>
+                            <div class="d-flex gap-2 ps-2">
+                                <a href="#"><i class="footer-icon text-light fa-brands fa-twitter fs-12 p-2"></i></a>
+                                <a href="#"><i class="footer-icon fa-brands text-light fa-tumblr fs-12 p-2"></i></a>
+                                <a href="#"><i class="footer-icon text-light fa-brands fa-facebook-f fs-12 p-2"></i></a>
+                                <a href="#"><i class="footer-icon text-light fa-brands fa-instagram fs-12 p-2"></i></a>
                             </div>
                         </div>
-                        <div class="col-2">
-                            <h6 class="text-light footer-header">Quick Links</h4>
-                                <p class="af fs-12 p-1 m-0 ">- Support</p>
-                                <p class="af fs-12 p-1 m-0 ">- Helpline</p>
-                                <p class="af fs-12 p-1 m-0 ">- Courses</p>
-                                <p class="af fs-12 p-1 m-0 ">- About</p>
-                                <p class="af fs-12 p-1 m-0 ">- Event</p>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-12 mb-sm-4 mb-4">
+                            <ul>
+                                <li><h6 class="text-light footer-header">Quick Links</h4></li>
+                                <li class="af px-3 m-0">-<a href="#" class="move-right af "> Support</a></li>
+                                <li class="af px-3 m-0">-<a href="#" class="move-right af "> Helpline</a></li>
+                                <li class="af px-3 m-0">-<a href="#" class="move-right af "> Courses</a></li>
+                                <li class="af px-3 m-0">-<a href="#" class="move-right af "> About</a></li>
+                                <li class="af px-3 m-0">-<a href="#" class="move-right af "> Event</a></li>
+                            </ul>  
                         </div>
-                        <div class="col-2">
-                            <h6 class="text-light footer-header">Other Page</h4>
-                                <p class="af fs-12 p-1 m-0 ">- About</p>
-                                <p class="af fs-12 p-1 m-0 ">- Blog</p>
-                                <p class="af fs-12 p-1 m-0 ">- Speakers</p>
-                                <p class="af fs-12 p-1 m-0 ">- Contact</p>
-                                <p class="af fs-12 p-1 m-0 ">- Tricket</p>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-12 mb-sm-4 mb-4">
+                            <ul>
+                                <li><h6 class="text-light footer-header">Other Page</h4></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> About</a></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Blog</a></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Speakers</a></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Contact</a></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Tricket</a></li>
+                            </ul>
                         </div>
-                        <div class="col-2">
-                            <h6 class="text-light footer-header">Company</h4>
-                                <p class="af fs-12 p-1 m-0 ">- Jesco</p>
-                                <p class="af fs-12 p-1 m-0 ">- Shop</p>
-                                <p class="af fs-12 p-1 m-0 ">- Contact Us</p>
-                                <p class="af fs-12 p-1 m-0 ">- Log In</p>
-                                <p class="af fs-12 p-1 m-0 ">- Help</p>
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-12 mb-4">
+                            <ul>
+                                <li><h6 class="text-light footer-header">Company</h4></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Jesco</a></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Shop</a></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Contact Us</a></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Log In</a></li>
+                                <li class="af px-1 m-0">-<a href="#" class="move-right af "> Help</a></li>
+                            </ul>    
                         </div>
-                        <div class="logo1 col align-self-center col-3">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <h6 class="text-light footer-header">Store Information</h4>
-                                <p class="af fs-12 py-1 m-0 w-76">2005 Your Address Goes Here.
+                                <p class="af py-1 m-0 w-76">2005 Your Address Goes Here.
                                     896, Address 10010, HGJ</p>
-                                <p class="af fs-12 py-1 m-0 ">Phone/Fax:0123456789</p>
-                                <p class="af fs-12 py-1 m-0 ">email:demo@example.com</p>
+                                <p class="af py-1 m-0 ">Phone/Fax:<a href="#" class="af hover-col">0123456789</a></p>
+                                <p class="af py-1 m-0 ">email:<a href="#" class="af hover-col">demo@example.com</a></p>
                                 <div class="py-3">
-                                    <img class="" src="./assets/images/productImages/payment.png" alt="">
+                                    <img class="" src="assets/images/icons/payment.png" alt="">
                                 </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-2 af fs-12 p-4 d-flex justify-content-center align-items-center">
-                <p class="m-0">© 2023 Jesco Made With By HasThemes.</p>
+            <div class="footer-2 f2 fs-12 p-4 d-flex justify-content-center align-items-center">
+                <p class="m-0">© 2023 Jesco Made With <i class="fa-solid fa-heart"></i> By <a href="#" class="f2 hover-col">HasThemes</a>.</p>
             </div>
         </footer>
         <!-- Footer end -->

@@ -18,7 +18,7 @@
             .item-disc {
                 top: 55%;
                 left: 15%;
-                font-weight: 400;
+                font-weight: 600;
                 cursor: pointer;
 
                 .item-title {
@@ -36,6 +36,17 @@
 
         .col-3.center {
             width: 24.9% !important;
+            overflow: hidden;
+
+            &:hover {
+                .banner-img {
+                    transform: rotate(3.5deg) scale(1.1);
+                }
+            }
+
+            .banner-img {
+                transition: transform 0.5s ease;
+            }
 
             .item-disc-center {
                 top: 35%;
@@ -45,7 +56,7 @@
                 .title {
                     color: $jesco-red;
                     font-size: 30px;
-                    font-weight: 400 !important;
+                    font-weight: 700 !important;
                     margin-bottom: 19px;
                 }
 
@@ -394,7 +405,6 @@
         padding-top: 60px;
         visibility: hidden;
         
-
         .product-box {
             .box-image {
                 height: 315.16px;
@@ -697,24 +707,5 @@
                 }
             }
         }
-    }
-}
-
-// Footer Area Styles
-footer {
-    .footer-1 {
-        background-color: $footer1-bg-color;
-    }
-
-    .footer-2 {
-        background-color: $footer2-bg-color;
-    }
-
-    .af {
-        color: $color-af;
-    }
-
-    .fs-12 {
-        font-size: 15px;
     }
 }
